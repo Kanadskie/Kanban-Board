@@ -6,6 +6,9 @@
   .App .main {
     display: flex;
     flex: 1 1 auto; }
+    @media screen and (max-width: 767px) {
+      .App .main {
+        flex: .2 .5 auto; } }
   .App .blocks {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
