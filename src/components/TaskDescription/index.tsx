@@ -38,16 +38,16 @@ export const TaskDescription = () => {
 
                     <h2 className={style.details_header_name}>{current.task.name}</h2>
 
-                    <div className={style.btns_block} onClick={saveEditedData}>
+                    <div className={style.btns_block} >
 
-                        {/* <Link
-                            to={window.location.pathname}
-                            // onClick={saveEditedData}
-                        > */}
+                        <Link
+                            to=''
+                            onClick={saveEditedData}
+                        >
 
                             {editMode ? (<Icon name={'save'} />) : (<Icon name={'edit'} />)}
 
-                        {/* </Link> */}
+                        </Link>
 
                         <Link to="/">
 
