@@ -5,7 +5,8 @@ import { Footer } from '../Footer/index.tsx'
 import { Header } from '../Header/index.tsx'
 import { TaskDescription } from '../TaskDescription/index.tsx'
 import { getData, activeCounter, finishedCounter} from '../../data/data.ts'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+// import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 
 function App() {
@@ -24,9 +25,9 @@ function App() {
 		return new Date().toUTCString().substring(12, 16)
 	}
 
-  	const router = createBrowserRouter([
+  	const router = createHashRouter([
 		{
-			path: 'https://kanadskie.github.io/Kanban-Board',
+			path: "/*",
 			element: <Sections appData={appData} setAppData={setAppData} />,
 		},
     	{
