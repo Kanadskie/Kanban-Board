@@ -11,6 +11,10 @@
 	right: 0;
 	top: 20px;
 
+	@media screen and (max-width: 767px) {
+		height: initial;
+	}
+
 	.details {
 		padding: 22px;
 

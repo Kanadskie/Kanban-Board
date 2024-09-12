@@ -1,4 +1,6 @@
 .btn {
+  display: flex;
+  align-items: center;
   border: none;
   outline: 0;
   cursor: pointer;

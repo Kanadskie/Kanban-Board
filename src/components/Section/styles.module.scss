@@ -6,6 +6,10 @@
     border-radius: 10px;
     background: #EBECF0;
 
+    @media screen and (max-width: 1023px) {
+        align-self: stretch;
+    }
+
     &:last-child {
         margin-right: 0;
     }
@@ -19,11 +23,11 @@
         }
 
         &_tasks {
-            max-height: 300px;
+            max-height: 350px;
             overflow-y: auto;
 
             @media screen and (max-width: 1023px) {
-                max-height: 150px;
+                max-height: 250px;
             }
 
             @media screen and (max-width: 767px) {
