@@ -49,7 +49,7 @@ export const TaskDescription = () => {
 
                         </Link>
 
-                        <Link to="/*">
+                        <Link to="/">
 
                             <Icon name={'close'} />
 
