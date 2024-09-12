@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom/client';
 import App from './components/App/App.tsx';
 import reportWebVitals from './reportWebVitals.js';
 import { initStorage } from './data/data.ts'
-import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!)
 
@@ -13,9 +12,7 @@ initStorage()
 
 root.render(
     <React.StrictMode>
-        <HashRouter>
-            <App />
-        </HashRouter>
+        <App />
     </React.StrictMode>
 )
 
