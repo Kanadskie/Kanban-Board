@@ -7,10 +7,6 @@
     .main {
         display: flex;
         flex: 1 1 auto;
-
-        @media screen and (max-width: 767px) {
-            flex: 0 1 auto;
-        }
     }
     
     .blocks {
