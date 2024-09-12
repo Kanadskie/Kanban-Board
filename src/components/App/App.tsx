@@ -26,7 +26,7 @@ function App() {
 
   	const router = createBrowserRouter([
 		{
-			path: '/Kanban-Board',
+			path: 'https://kanadskie.github.io/Kanban-Board',
 			element: <Sections appData={appData} setAppData={setAppData} />,
 		},
     	{
