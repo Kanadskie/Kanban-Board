@@ -1,0 +1,41 @@
+.footer {
+    background: #0067A3;
+    color: #fff;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 20px;
+        height: 55px;
+
+        @media screen and (max-width: 767px) {
+            justify-content: space-around;
+        }
+    }
+
+    .counters_block {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .active {
+            margin-right: 36px;
+
+            @media screen and (max-width: 767px) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .copyright {
+        @media screen and (max-width: 767px) {
+            align-content: flex-end;
+            text-align: center;
+        }
+    }
+}

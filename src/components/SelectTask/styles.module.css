@@ -1,0 +1,23 @@
+.select {
+  display: flex; }
+  .select_item {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 12px 15px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-image: url(../../icons/select-down.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; }
+    .select_item:focus {
+      outline: 0; }
+    .select_item_option {
+      font-size: 0.5rem;
+      padding: 2px 5px; }
+
+/*# sourceMappingURL=styles.module.css.map */

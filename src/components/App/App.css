@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  background: #0079BF;
+  min-height: 100vh; }
+  .App .main {
+    display: flex;
+    flex: 1 1 auto; }
+  .App .blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+    @media screen and (max-width: 1023px) {
+      .App .blocks {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: stretch;
+        gap: 15px; } }
+    @media screen and (max-width: 767px) {
+      .App .blocks {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: stretch;
+        gap: 15px; } }
+
+/*# sourceMappingURL=App.css.map */

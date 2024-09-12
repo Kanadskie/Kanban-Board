@@ -1,0 +1,51 @@
+.btn {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: #5E6C84;
+    background: transparent;
+    padding: 4px 4px 4px 3px;
+    margin-top: 3px;
+
+    &:disabled {
+        background: #dbdde2;
+        border-radius: 5px;
+        cursor: not-allowed;
+
+        &:hover {
+            background: #dbdde2;
+        }
+    }
+
+    &:hover {
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    &_submit {
+        color: #fff;
+        background: #0079BF;
+        border-radius: 5px;
+        padding: 4px 15px;
+
+        &:hover {
+            background: #0393e7;
+        }
+
+        &:disabled {
+            color: #5E6C84;
+        }
+    }
+
+    &_delete {
+        color: #fff;
+        background: #881414;
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 4px 15px;
+
+        &:hover {
+            background: #de1212;
+        }
+    }
+}

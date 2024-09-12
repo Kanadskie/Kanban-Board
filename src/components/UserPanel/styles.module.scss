@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.user_panel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    &_menu {
+        display: block;
+        width: 134px;
+        height: 60px;
+        font-size: 14px;
+        background-color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        top: 60px;
+        right: 29px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        z-index: 2;
+
+        &_square {
+            width: 11px;
+            height: 11px;
+            background-color: #fff;
+            position: absolute;
+            top: -5px;
+            right: 36px;
+            rotate: -45deg;
+            z-index: 2;
+        }
+
+        &_list {
+            list-style: none;
+            padding: 0 0 0 7px;
+            margin: 8px 0;
+
+            &__item {
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #0393e7;
+                }
+            }
+            
+        }
+
+        &__hide {
+            display: none;
+        }
+    }
+}

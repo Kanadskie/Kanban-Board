@@ -1,0 +1,16 @@
+.input {
+  display: flex; }
+  .input_element {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    min-height: 19px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 12px 15px 0;
+    padding: 8px; }
+    .input_element:focus {
+      border: none;
+      outline: 0; }
+
+/*# sourceMappingURL=styles.module.css.map */

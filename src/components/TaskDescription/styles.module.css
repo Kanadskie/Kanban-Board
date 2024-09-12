@@ -1,0 +1,61 @@
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 286px;
+  position: absolute;
+  width: 95vw;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20px; }
+  .container .details {
+    padding: 22px; }
+    .container .details_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .details_header_name {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000; }
+        @media screen and (max-width: 767px) {
+          .container .details_header_name {
+            font-size: 18px; } }
+    .container .details .btns_block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85px; }
+      .container .details .btns_block_item {
+        width: 102px;
+        font-size: 18px;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        color: #5E6C84;
+        background: transparent;
+        padding: 4px 4px 4px 3px;
+        margin-top: 3px; }
+    .container .details .edit_area {
+      width: 100%;
+      box-sizing: border-box;
+      min-height: 170px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      margin: 0;
+      padding: 5px;
+      resize: none;
+      overflow: auto;
+      outline: none; }
+      .container .details .edit_area:focus {
+        outline: none; }
+    .container .details .description {
+      min-height: 158px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      margin: 0;
+      padding: 5px; }
+
+/*# sourceMappingURL=styles.module.css.map */

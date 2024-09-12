@@ -1,0 +1,30 @@
+.footer {
+  background: #0067A3;
+  color: #fff; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 20px;
+    height: 55px; }
+    @media screen and (max-width: 767px) {
+      .footer .container {
+        justify-content: space-around; } }
+  .footer .counters_block {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .footer .counters_block {
+        margin-right: 10px;
+        text-align: center; } }
+    .footer .counters_block .active {
+      margin-right: 36px; }
+      @media screen and (max-width: 767px) {
+        .footer .counters_block .active {
+          margin-right: 10px; } }
+  @media screen and (max-width: 767px) {
+    .footer .copyright {
+      align-content: flex-end;
+      text-align: center; } }
+
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,30 @@
+.header {
+    background: #0067A3;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin: auto 20px;
+        height: 55px;
+
+        @media screen and (max-width: 425px) {
+            justify-content: flex-end;
+        }
+    }
+
+    .title {
+        font-size: 28px;
+        color: #fff;
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    .user_panel {
+        display: flex;
+        align-items: center;
+    }
+}
