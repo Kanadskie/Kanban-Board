@@ -27,7 +27,7 @@ function App() {
 
   	const router = createHashRouter([
 		{
-			path: '/*',
+			path: '/Kanban-Board',
 			element: <Sections appData={appData} setAppData={setAppData} />,
 		},
     	{

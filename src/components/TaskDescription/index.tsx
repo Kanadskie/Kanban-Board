@@ -41,7 +41,7 @@ export const TaskDescription = () => {
                     <div className={style.btns_block}>
 
                         <Link
-                            to={window.location.href}
+                            to={window.location.pathname}
                             onClick={saveEditedData}
                         >
 
