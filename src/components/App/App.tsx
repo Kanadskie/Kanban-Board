@@ -31,7 +31,7 @@ function App() {
 			element: <Sections appData={appData} setAppData={setAppData} />,
 		},
     	{
-			path: '#/:mode/:id/description/',
+			path: ':mode/:id/description/',
 			element: <TaskDescription />,
 			loader: ({ params }) => {
 				const data: any = getData()
