@@ -88,13 +88,10 @@ export default function Section({appData, setAppData, tasks, prevTasks, name, mo
 		setBtnDisabled(false)
 	}
 
-	const allowToPost = (e: any) => {
-		setInput(e.target.value)
-		if (e.target.value !== '') {
-			setBtnDisabled(false)
-		} else {
-			setBtnDisabled(true)
-		}
+	const allowToPost = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const value = e.target.value
+		setInput(value)
+		setBtnDisabled(value === '')
 	}
 
 	return (
@@ -127,13 +124,14 @@ export default function Section({appData, setAppData, tasks, prevTasks, name, mo
 						<InputTask 
 							test={`${mode}-input`}
 							onChange={allowToPost} 
+							value={input}
 						/>
 
 						) : sectionType === 2 ? (
 
 						<SelectTask 
 							optionsList={prevTasks} 
-							clickSelected={handleClickSelect}
+							onChange={handleClickSelect}
 							test={'selected-option'}
 						/>
 
@@ -152,7 +150,7 @@ export default function Section({appData, setAppData, tasks, prevTasks, name, mo
 					test={`${mode}-button`}
 					icon={btnState ? '' : <Icon name={'add'} />} 
 					currentBtnClass={btnState ? `${btnStyle.btn} ${btnStyle.btn_submit}` : `${btnStyle.btn}`} 
-					action={btnState ? handleClickSubmitBtn : handleClickAddField} 
+					onClick={btnState ? handleClickSubmitBtn : handleClickAddField} 
 					text={btnState ? 'Submit' : 'Add card'} 
 					btnStatus={btnDisabled}
 				/>
@@ -161,7 +159,7 @@ export default function Section({appData, setAppData, tasks, prevTasks, name, mo
 
 					<Button
 						currentBtnClass={`${btnStyle.btn} ${btnStyle.btn_delete}`}
-						action={handleClickDeleteBtn}
+						onClick={handleClickDeleteBtn}
 						text={'Delete'} 
 						icon={undefined} 
 						btnStatus={false} 

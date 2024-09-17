@@ -5,52 +5,52 @@ import { sectionsProps } from "../../interfaces/interfaces.ts"
 
 export default function Sections({ appData, setAppData }: sectionsProps) {
 
+	const sectionData = [
+		{
+			name: "Backlog",
+			tasks: appData.backlog,
+			prevTasks: [],
+			mode: "backlog",
+			prevMode: "",
+		},
+		{
+			name: "Ready",
+			tasks: appData.ready,
+			prevTasks: appData.backlog,
+			mode: "ready",
+			prevMode: "backlog",
+		},
+		{
+			name: "In Progress",
+			tasks: appData.inProgress,
+			prevTasks: appData.ready,
+			mode: "inProgress",
+			prevMode: "ready",
+		},
+		{
+			name: "Finished",
+			tasks: appData.finished,
+			prevTasks: appData.inProgress,
+			mode: "finished",
+			prevMode: "inProgress",
+		}
+	]
+
 	return (
-
 		<>
-
-			<Section
-				appData={appData}
-				setAppData={setAppData}
-				name={'Backlog'}
-				tasks={appData.backlog}
-				prevTasks={[]}
-				mode={'backlog'}
-				prevMode={''}
-			/>
-
-			<Section
-				appData={appData}
-				setAppData={setAppData}
-				name={'Ready'}
-				tasks={appData.ready}
-				prevTasks={appData.backlog}
-				mode={'ready'}
-				prevMode={'backlog'}
-			/>
-
-			<Section
-				appData={appData}
-				setAppData={setAppData}
-				name={'In Progress'}
-				tasks={appData.inProgress}
-				prevTasks={appData.ready}
-				mode={'inProgress'}
-				prevMode={'ready'}
-			/>
-
-			<Section
-				appData={appData}
-				setAppData={setAppData}
-				name={'Finished'}
-				tasks={appData.finished}
-				prevTasks={appData.inProgress}
-				mode={'finished'}
-				prevMode={'inProgress'}
-			/>
-    
-    	</>
-
-  	) 
+			{sectionData.map((section, index) => (
+				<Section
+					key={index}
+					appData={appData}
+					setAppData={setAppData}
+					name={section.name}
+					tasks={section.tasks}
+					prevTasks={section.prevTasks}
+					mode={section.mode}
+					prevMode={section.prevMode}
+				/>
+			))}
+		</>
+	)
 
 }

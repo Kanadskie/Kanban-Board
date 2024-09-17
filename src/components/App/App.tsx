@@ -5,7 +5,6 @@ import { Footer } from '../Footer/index.tsx'
 import { Header } from '../Header/index.tsx'
 import { TaskDescription } from '../TaskDescription/index.tsx'
 import { getData, activeCounter, finishedCounter} from '../../data/data.ts'
-// import { createBrowserRouter } from 'react-router-dom'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 
@@ -34,7 +33,7 @@ function App() {
 			path: ':mode/:id/description/',
 			element: <TaskDescription />,
 			loader: ({ params }) => {
-				const data: any = getData()
+				const data: Object = getData()
 				const id: string | undefined = params.id
 				const mode: string | undefined = params.mode
 				const result = mode && data[mode].find((task: { id: number }) => task.id === Number(id))
@@ -53,13 +52,10 @@ function App() {
 			<Header />
 
 			<div className='main'>
-
 				<div className='blocks'>
-
 					<RouterProvider 
 						router={router} 
 					/>
-
 				</div>
 
 			</div>

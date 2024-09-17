@@ -2,15 +2,15 @@ import React from 'react'
 import style from './styles.module.css'
 
 
-export const SelectTask = (props: { optionsList: any; clickSelected: any, test: string }) => {
+export const SelectTask = (props: { optionsList: any; onChange: React.ChangeEventHandler<HTMLSelectElement>, test: string }) => {
 
-    const {optionsList, clickSelected, test} = props
+    const {optionsList, onChange, test} = props
 
     return (
 
         <div className={style.select}>
 
-            <select className={style.select_item} onChange={clickSelected} data-testid='select'>
+            <select className={style.select_item} onChange={onChange} data-testid='select'>
 
                 <option value=''>Choose task...</option>
 

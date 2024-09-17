@@ -33,7 +33,7 @@ export const Header = () => {
 
                 <UserPanel 
                     arrowType = {direction}
-                    action = {clicked ? closeMenu : openMenu}
+                    onClick = {clicked ? closeMenu : openMenu}
                     hide = {hide ? `${style_menu.user_panel_menu__hide}` : `${style_menu.user_panel_menu}`}
                 />
 

@@ -1,13 +1,13 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
 
-export const Button = (props: { action: any; text: string; currentBtnClass: string; icon: any; btnStatus: boolean; test: string }) => {
+export const Button = (props: { onClick: React.MouseEventHandler<HTMLButtonElement>; text: string; currentBtnClass: string; icon: ReactNode; btnStatus: boolean; test: string }) => {
 
-    const {action, text, currentBtnClass, icon, btnStatus, test} = props
+    const {onClick, text, currentBtnClass, icon, btnStatus, test} = props
 
     return (
 
-        <button data-testid={test} className={currentBtnClass} disabled={btnStatus} onClick={action}>{icon}{text}</button>
+        <button data-testid={test} className={currentBtnClass} disabled={btnStatus} onClick={onClick}>{icon}{text}</button>
 
     )
     

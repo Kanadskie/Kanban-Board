@@ -3,15 +3,15 @@ import React from 'react'
 import { Icon } from '../Icon/index.tsx'
 
 
-export const UserPanel = (props: { arrowType: string; action: any; hide: string }) => {
+export const UserPanel = (props: { arrowType: string; onClick: React.MouseEventHandler<HTMLDivElement>; hide: string }) => {
 
-    const {arrowType, action, hide} = props
+    const {arrowType, onClick, hide} = props
 
     return (
         
         <div className={style.wapper}>
 
-            <div className={style.user_panel} onClick={action}>
+            <div className={style.user_panel} onClick={onClick}>
 
                 <Icon name={'avatar'} />
                 <Icon name={arrowType} />
