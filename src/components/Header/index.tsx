@@ -29,7 +29,7 @@ export const Header = () => {
 
             <div className={style.container}>
 
-                <span className={style.title}>Awesome Kanban Board</span>
+                <span className={style.title}>Kanban Board</span>
 
                 <UserPanel 
                     arrowType = {direction}

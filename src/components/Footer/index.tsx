@@ -29,7 +29,7 @@ export const Footer = (props: { active: number; finished: number; year: string }
 
                 <div className={style.copyright}>
                     
-                    Kanban board by {'Kanadskie'}, {year}
+                    {'Kanadskie'}, {year}
 
                 </div>
 

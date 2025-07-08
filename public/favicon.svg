@@ -1,7 +1,24 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --> <title>ic_fluent_board_24_regular</title> <desc>Created with Sketch.</desc> <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="ic_fluent_board_24_regular" fill="#0067A3" fill-rule="nonzero"> <path d="M18.2513521,2.49820514 C19.9843968,2.49820514 21.4006513,3.85452629 21.4962634,5.56367469 L21.5014083,5.74810161 L21.5008077,17.7519229 C21.5005988,19.5467519 20.0455893,21.0018356 18.2507042,21.0018356 L6.25005624,21.0018356 C4.51701151,21.0018356 3.10075697,19.6455145 3.00514494,17.9363661 L3,17.7519391 L3.00060063,5.74811784 C3.00080955,3.9532889 4.45581897,2.49820514 6.25064792,2.49820514 L18.2513521,2.49820514 Z M11.5,9.49820514 L4.5,9.49920514 L4.50010353,17.7518667 L4.50727563,17.9125936 C4.58838653,18.803788 5.33765319,19.5018356 6.25,19.5018356 L11.5,19.5012051 L11.5,9.49820514 Z M20,15.4982051 L13,15.4992051 L13,19.5012051 L18.2506479,19.5018356 C19.2171619,19.5018356 20.0006952,18.7182622 20.0008077,17.7518046 L20,15.4982051 Z M18.2514083,3.99820514 L13,3.99720514 L13,13.9992051 L20,13.9982051 L20.0013048,5.74817408 L19.9941327,5.58744715 C19.9130218,4.69625278 19.1637551,3.99820514 18.2514083,3.99820514 Z M11.5,3.99720514 L6.25073228,3.99820514 L6.10723072,4.00401666 C5.20785168,4.0770851 4.5007075,4.83010139 4.50060063,5.7482362 L4.5,7.99920514 L11.5,7.99820514 L11.5,3.99720514 Z" id="🎨-Color"> </path> </g> </g> </g>
-</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3A4F41;}
+</style>
+<g id="SVGRepo_bgCarrier">
+</g>
+<g id="SVGRepo_tracerCarrier">
+</g>
+<g id="SVGRepo_iconCarrier">
+	<desc>Created with Sketch.</desc>
+	<g id="_xD83D__xDD0D_-Product-Icons">
+		<g id="ic_fluent_board_24_regular">
+			<path id="_xD83C__xDFA8_-Color" class="st0" d="M608.4,83.3c57.8,0,105,45.2,108.2,102.2l0.2,6.1l0,400.1
+				c0,59.8-48.5,108.3-108.3,108.3h-400c-57.8,0-105-45.2-108.2-102.2l-0.2-6.1l0-400.1c0-59.8,48.5-108.3,108.3-108.3H608.4z
+				 M383.3,316.6l-233.3,0l0,275.1l0.2,5.4c2.7,29.7,27.7,53,58.1,53l175,0V316.6z M666.7,516.6l-233.3,0V650l175,0
+				c32.2,0,58.3-26.1,58.3-58.3L666.7,516.6z M608.4,133.3l-175,0v333.4l233.3,0l0-275l-0.2-5.4
+				C663.8,156.5,638.8,133.3,608.4,133.3z M383.3,133.2l-175,0l-4.8,0.2c-30,2.4-53.6,27.5-53.6,58.1l0,75l233.3,0V133.2z"/>
+		</g>
+	</g>
+</g>
+</svg>
